@@ -46,7 +46,8 @@ def main(argv):
         sys.exit(2)
     for opt, arg in options:
         if opt == '-h':
-            print("usage: python frequent_words.py -i <input_file> -o <output_file>")
+            print(
+                "usage: python frequent_words.py -i <input_file> -o <output_file> [type=txt|json|csv|]")
             sys.exit()
         elif opt == "-i":
             inName = arg
